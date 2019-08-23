@@ -1,31 +1,59 @@
-.App {
-  text-align: center;
-}
 
 .nevispic {
-  width: 120px; 
-  height: 120px; 
+  width: 180px; 
+  height: 180px; 
   border-radius: 100px; 
+  border: 4px solid white; 
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px; 
+  color: white;
+}
+.background {
+  position: relative; 
+  margin-top: 0; 
+  margin-bottom: 0; 
+}
+.main {
+  width: 100vw;
+  height: 100vh; 
+}
+h3 {
+  margin: 0; 
+  font-size: 40px; 
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.sub2 {
+  margin: 0; 
+  font-size: 24px; 
+  position: relative;
+  text-align: center;
+  color: orange;
+}
+button {
+  border-radius: 8px; 
+  font-size: 22px; 
+  margin-top: 25px; 
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+body {
+  margin: 0;
+  padding: 0; 
+  background-color: black;
+  font-family: 'Raleway'
 }
 
-.main-box {
-display: flex;
-} 
-
-.box1 {
-  width: 100vw; 
-  height:100vh; 
-  background-color: blue; 
-}
-
-.about-me {
-  display: flex;
-  width: 100vw; 
-  height: 100vh;
-  } 
-
-.box2{
-  width: 100vw; 
-  height: 100vh;
-  background-color: red; 
+.lolo {
+  z-index: 1;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%)
 }
