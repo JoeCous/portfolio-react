@@ -56,30 +56,123 @@ body {
   width: 100vw;
   height: 100vh; 
 }
-.main {
-  z-index: 1;
-  position: absolute;
-  top: 10%;
-  left: 50%;
-  transform: translateX(-50%)
-}
 .container2 {
   background-color: white;
   width: 100vw;
   height: 100vh; 
 }
 .container3 {
-  background-color: orange;
+  background-color: black;
   width: 100vw;
   height: 100vh; 
 }
-a {
-  text-decoration: none;
-  color: black; 
+.container4 {
+  background-color: white;
+  width: 100vw;
+  height: 100vh; 
+}
+.main {
+  z-index: 1;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translateX(-50%)
 }
 .about-me {
-  width: 40%;
-  text-align: left; 
-  padding-left: 20px; 
-
+  padding-top: 50px; 
+  text-align: center;
 }
+a {
+  text-decoration: none;
+  color: black;  
+}
+.twitter {
+  color:orange;
+}
+.nono {
+  width: 100vw;
+  height: 100vh;
+}
+.worktitle {
+  color: white;
+  padding-top: 20px; 
+  padding-bottom: 30px; 
+}
+.photoshop {
+  padding-bottom: 20px; 
+  padding-right: 20px; 
+  width: 90px; 
+  height: 90px; 
+}
+.illustrator {
+  padding-bottom: 20px; 
+  padding-right: 20px; 
+  width: 90px; 
+  width: 90px; 
+}
+.indesign {
+  padding-bottom: 20px; 
+  padding-right: 20px; 
+  width: 90px; 
+  height: 90px; 
+}
+.html {
+  width: 370px; 
+  height: 150px; 
+}
+form {
+  padding: 20px;
+  border: 1px dashed black; 
+  text-align: left;
+  font-size: 18px; 
+  width: 40%;
+}
+.contactlinks {
+  text-align: right; 
+}
+.line1, .line2, .line3 {
+  margin: 0; 
+}
+.aboutmeimages {
+  padding-top: 40px;
+}
+.aboutmeheader {
+  padding-bottom: 40px;
+}
+.pic1, .pic2 {
+  height: 35%;
+  width: 35%;
+  border-radius: 20px; 
+}
+.pic1des{
+  color: white;
+  font-size: 40px; 
+  font-weight: bold; 
+  text-align: center;
+  transform: translate(-0%, -425%);
+}
+.imgwrap1 img:hover{
+  opacity: 0.2;
+}
+.imgwrap2 img:hover{
+  opacity: 0.2;
+}
+.work {
+  display: flex; 
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.imgwrap1 {
+  height: 100%;
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.pic1 {
+  width: 100%;
+  height: auto;
+}
+
+
+
+

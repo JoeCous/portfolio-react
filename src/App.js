@@ -1,5 +1,11 @@
 import React from 'react';
 import logo from './nevis.png';
+import twitter from './twitter.png';
+import ps from './ps.svg'; 
+import ai from './ai.svg'; 
+import id from './id.svg'; 
+import html from './htmlcss.png'; 
+
 import './App.css';
 import Particles from 'react-particles-js'
 
@@ -14,6 +20,7 @@ const particleOpt = {
     }
   }
 }
+
 class App extends React.Component {
   render() {
     return (
@@ -27,6 +34,7 @@ class App extends React.Component {
         </div>
           <Aboutme/> 
           <Work/> 
+          <Contact/> 
       </div>
     );
   }
@@ -36,45 +44,80 @@ class Aboutme extends React.Component {
   render() {
     return (
       <div className = "container2">
+      <a href="aboutme" name="aboutme"></a>
       <div className="about-me">
-      <a name="aboutme"></a>
-        <h3>About Me</h3> 
-        <h4> 2007-2009</h4>
-        <p> I have always had a passion for development and design and I started by studying a National diploma in Graphic design, which included basic web development.</p>
-        
-        <h4> 2009-20015</h4>
-        <p> I previously worked as a Graphic Designer with a local print company. I was the only designer and worked across a variety of projects over six years.</p>
-        
-        <h4> 2015-2019</h4>
-        <p> I started working at AO.com doing something completley different to design. As
-        much as I enjoyed my time doing design, I just wanted to learn more and learn to build
-        apps/websites from scratch.
-      </p>
+        <h3 className="aboutmeheader">About Me</h3> 
+        <p className="line1"> I have always been interested in design and web development and have previously worked as a Graphic Designer.</p>
+        <p className="line2">I am currently studying the Software Development course at Code Nation in Manchester. </p>
+        <p className="line3"> During the course I have studied HTML 5, CSS3, Javascript, React and Node JS. Currently I am studying C# and .NET.</p> 
 
-      <h4> 2019</h4>
-      <p> Four years after working at AO.com I have now become an Apprentice Junior Developer. I am currently studying at Code Nation in Manchester and the course lasts 12 weeks. I will then
-        return to AO.com as a Junior Developer.</p>
+    <div className="aboutmeimages">
+    <img src={ps} className="photoshop" alt="logo" />
+    <img src={ai} className="illustrator" alt="logo" />
+    <img src={id} className="indesign" alt="logo" />
+    <img src={html} className="html" alt="logo" />
+</div>
 
-      <button> <a href="#work"> Work </a> </button>
-      </div>
+<button> <a href="#work" className="work"> Work </a> </button>
+</div>
       </div>
     )
 }
 }
-
 class Work extends React.Component {
   render() {
     return (
       <div className = "container3">
+      <a href="work" name="work">WORK</a>
+      <h3 className="worktitle">Work</h3> 
       <div className="work">
-      <a name="work"></a>
-      <h3>Work</h3> 
+      <div className="imgwrap1">
+      <a href="https://joecous.github.io/twitterclone/"><img src={twitter} alt="twitter" className="pic1"/></a>
+      <p class="pic1des">Static Twitter Page</p>
       </div>
+      <div className="imgwrap1">
+      <a href="https://joecous.github.io/twitterclone/"><img src={twitter} alt="twitter" className="pic1"/></a>
+      {/* <p class="pic1des">Static Twitter Page</p> */}
+      </div>
+      <div className="imgwrap1">
+      <a href="https://joecous.github.io/twitterclone/"><img src={twitter} alt="twitter" className="pic1"/></a>
+      {/* <p class="pic1des">Static Twitter Page</p> */}
+      </div>
+      <div className="imgwrap1">
+      <a href="https://joecous.github.io/twitterclone/"><img src={twitter} alt="twitter" className="pic1"/></a>
+      {/* <p class="picdes">Static Twitter Page</p> */}
+      </div>
+      </div>
+      <button class="contact"> <a href="#contact"> Contact</a> </button>
       </div>
     )
 }
 }
 
+class Contact extends React.Component {
+  render() {
+    return (
+      <div className = "container4">
+      <div className="contact">
+      <h3 className="contact">Contact</h3> 
 
+      <form>
+        <p>Name:</p> <input type="text"/>
+        <p>Email:</p> <input type="text"/>
+        <p>Subject:</p> <input type="text"/>
+        <p>Message:</p> <input type="text"/>
+      </form>
+
+      <div className="contactlinks">
+      Mail
+      github
+      phone  
+      </div> 
+      
+      </div>
+      </div>
+    )
+}
+}
 export default App;
 
